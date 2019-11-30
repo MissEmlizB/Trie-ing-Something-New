@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1751E582392CCAF003AEBDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1751E572392CCAF003AEBDF /* AppDelegate.swift */; };
+		A1751E5A2392CCAF003AEBDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1751E592392CCAF003AEBDF /* ViewController.swift */; };
+		A1751E5C2392CCB7003AEBDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1751E5B2392CCB7003AEBDF /* Assets.xcassets */; };
+		A1751E5F2392CCB7003AEBDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1751E5D2392CCB7003AEBDF /* Main.storyboard */; };
+		A1751E6A2392CCE8003AEBDF /* trie.c in Sources */ = {isa = PBXBuildFile; fileRef = A1751E682392CCE8003AEBDF /* trie.c */; };
+		A1751E6C2392CDC0003AEBDF /* TrieObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A1751E6B2392CDC0003AEBDF /* TrieObject.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A1751E542392CCAF003AEBDF /* Trie Adding Words Into This.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trie Adding Words Into This.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1751E572392CCAF003AEBDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A1751E592392CCAF003AEBDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A1751E5B2392CCB7003AEBDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1751E5E2392CCB7003AEBDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1751E602392CCB7003AEBDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1751E612392CCB7003AEBDF /* Trie_Adding_Words_Into_This.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Trie_Adding_Words_Into_This.entitlements; sourceTree = "<group>"; };
+		A1751E672392CCE1003AEBDF /* Trie Adding Words Into This-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Trie Adding Words Into This-Bridging-Header.h"; sourceTree = "<group>"; };
+		A1751E682392CCE8003AEBDF /* trie.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = trie.c; sourceTree = "<group>"; };
+		A1751E692392CCE8003AEBDF /* trie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trie.h; sourceTree = "<group>"; };
+		A1751E6B2392CDC0003AEBDF /* TrieObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrieObject.m; sourceTree = "<group>"; };
+		A1751E6D2392CDD6003AEBDF /* TrieObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrieObject.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1751E512392CCAE003AEBDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1751E4B2392CCAD003AEBDF = {
+			isa = PBXGroup;
+			children = (
+				A1751E562392CCAF003AEBDF /* Trie Adding Words Into This */,
+				A1751E552392CCAF003AEBDF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1751E552392CCAF003AEBDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1751E542392CCAF003AEBDF /* Trie Adding Words Into This.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1751E562392CCAF003AEBDF /* Trie Adding Words Into This */ = {
+			isa = PBXGroup;
+			children = (
+				A1751E672392CCE1003AEBDF /* Trie Adding Words Into This-Bridging-Header.h */,
+				A1A209C92392F08D00C0DB92 /* Resources */,
+				A1A209C82392F07F00C0DB92 /* Others */,
+				A1A209C72392F07200C0DB92 /* View Controllers */,
+				A1A209C62392EF8200C0DB92 /* Objects */,
+				A1A209C52392EF6500C0DB92 /* Trie */,
+			);
+			path = "Trie Adding Words Into This";
+			sourceTree = "<group>";
+		};
+		A1A209C52392EF6500C0DB92 /* Trie */ = {
+			isa = PBXGroup;
+			children = (
+				A1751E682392CCE8003AEBDF /* trie.c */,
+				A1751E692392CCE8003AEBDF /* trie.h */,
+			);
+			path = Trie;
+			sourceTree = "<group>";
+		};
+		A1A209C62392EF8200C0DB92 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				A1751E6D2392CDD6003AEBDF /* TrieObject.h */,
+				A1751E6B2392CDC0003AEBDF /* TrieObject.m */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		A1A209C72392F07200C0DB92 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A1751E592392CCAF003AEBDF /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A1A209C82392F07F00C0DB92 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				A1751E572392CCAF003AEBDF /* AppDelegate.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		A1A209C92392F08D00C0DB92 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A1751E602392CCB7003AEBDF /* Info.plist */,
+				A1751E612392CCB7003AEBDF /* Trie_Adding_Words_Into_This.entitlements */,
+				A1751E5D2392CCB7003AEBDF /* Main.storyboard */,
+				A1751E5B2392CCB7003AEBDF /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1751E532392CCAE003AEBDF /* Trie Adding Words Into This */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1751E642392CCB7003AEBDF /* Build configuration list for PBXNativeTarget "Trie Adding Words Into This" */;
+			buildPhases = (
+				A1751E502392CCAE003AEBDF /* Sources */,
+				A1751E512392CCAE003AEBDF /* Frameworks */,
+				A1751E522392CCAE003AEBDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Trie Adding Words Into This";
+			productName = "Trie Adding Words Into This";
+			productReference = A1751E542392CCAF003AEBDF /* Trie Adding Words Into This.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1751E4C2392CCAD003AEBDF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Emily Blackwell";
+				TargetAttributes = {
+					A1751E532392CCAE003AEBDF = {
+						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
+					};
+				};
+			};
+			buildConfigurationList = A1751E4F2392CCAD003AEBDF /* Build configuration list for PBXProject "Trie Adding Words Into This" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1751E4B2392CCAD003AEBDF;
+			productRefGroup = A1751E552392CCAF003AEBDF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1751E532392CCAE003AEBDF /* Trie Adding Words Into This */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1751E522392CCAE003AEBDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1751E5C2392CCB7003AEBDF /* Assets.xcassets in Resources */,
+				A1751E5F2392CCB7003AEBDF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1751E502392CCAE003AEBDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1751E5A2392CCAF003AEBDF /* ViewController.swift in Sources */,
+				A1751E6C2392CDC0003AEBDF /* TrieObject.m in Sources */,
+				A1751E6A2392CCE8003AEBDF /* trie.c in Sources */,
+				A1751E582392CCAF003AEBDF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A1751E5D2392CCB7003AEBDF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1751E5E2392CCB7003AEBDF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1751E622392CCB7003AEBDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1751E632392CCB7003AEBDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A1751E652392CCB7003AEBDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Trie Adding Words Into This/Trie_Adding_Words_Into_This.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4VC3JB53HL;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Trie Adding Words Into This/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "me.emilyblackwell.Trie-Adding-Words-Into-This";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Trie Adding Words Into This/Trie Adding Words Into This-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A1751E662392CCB7003AEBDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Trie Adding Words Into This/Trie_Adding_Words_Into_This.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4VC3JB53HL;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Trie Adding Words Into This/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "me.emilyblackwell.Trie-Adding-Words-Into-This";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Trie Adding Words Into This/Trie Adding Words Into This-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1751E4F2392CCAD003AEBDF /* Build configuration list for PBXProject "Trie Adding Words Into This" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1751E622392CCB7003AEBDF /* Debug */,
+				A1751E632392CCB7003AEBDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1751E642392CCB7003AEBDF /* Build configuration list for PBXNativeTarget "Trie Adding Words Into This" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1751E652392CCB7003AEBDF /* Debug */,
+				A1751E662392CCB7003AEBDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1751E4C2392CCAD003AEBDF /* Project object */;
+}
