@@ -23,7 +23,7 @@ class ViewController: NSViewController {
 		messageLabel.wantsLayer = true
 		messageLabel.stringValue = ""
 		
-		let appDelegate = NSApplication.shared.delegate as! AppDelegate
+		let appDelegate = NSApp.delegate as! AppDelegate
 		wordTree = appDelegate.wordTree
 	}
 
@@ -99,6 +99,7 @@ class ViewController: NSViewController {
 		let word = wordTextField.stringValue
 		
 		if !wordTree.isValidWord(word) {
+			
 			wordTree.addWord(word)
 			setMessageText("The word \"\(word)\" was added to the Trie!")
 		} else {
@@ -120,6 +121,22 @@ class ViewController: NSViewController {
 			setMessageText("Yes, the word \"\(word)\" is in the Trie!")
 		} else {
 			setMessageText("No, the word \"\(word)\" is not in the Trie!")
+		}
+	}
+	
+	@IBAction func resetTrie(sender: AnyObject) {
+		
+		let prompt = NSAlert()
+		prompt.messageText = "Are You Sure?"
+		prompt.informativeText = "You can't undo this BTW."
+		
+		prompt.addButton(withTitle: "Ok")
+		prompt.addButton(withTitle: "Cancel")
+		
+		let response = prompt.runModal()
+		
+		if response == .alertFirstButtonReturn {
+			wordTree.reset()
 		}
 	}
 }

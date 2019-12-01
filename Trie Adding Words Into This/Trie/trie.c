@@ -37,6 +37,29 @@ int charToKey(char aCharacter)
     }
 }
 
+char keyToChar(int key)
+{
+	if (key >= 0 && key < 26)
+	{
+		// A-Z characters
+		return 'a' + key;
+	}
+	
+	else if (key == 26)
+	{
+		// dashes
+		return '-';
+	}
+	
+	else if (key == 27)
+	{
+		// apostrophes
+		return '\'';
+	}
+	
+	return '\0';
+}
+
 trie_t *makeTrieNode()
 {
     trie_t *node = malloc(sizeof(trie_t));

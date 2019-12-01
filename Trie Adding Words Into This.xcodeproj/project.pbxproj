@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A10D6BD52393BA4900F8D6A0 /* WordsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10D6BD42393BA4900F8D6A0 /* WordsWindowController.swift */; };
 		A1751E582392CCAF003AEBDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1751E572392CCAF003AEBDF /* AppDelegate.swift */; };
 		A1751E5A2392CCAF003AEBDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1751E592392CCAF003AEBDF /* ViewController.swift */; };
 		A1751E5C2392CCB7003AEBDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1751E5B2392CCB7003AEBDF /* Assets.xcassets */; };
 		A1751E5F2392CCB7003AEBDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1751E5D2392CCB7003AEBDF /* Main.storyboard */; };
 		A1751E6A2392CCE8003AEBDF /* trie.c in Sources */ = {isa = PBXBuildFile; fileRef = A1751E682392CCE8003AEBDF /* trie.c */; };
 		A1751E6C2392CDC0003AEBDF /* TrieObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A1751E6B2392CDC0003AEBDF /* TrieObject.m */; };
+		A178FC5B2393931000A273B5 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A178FC5A2393931000A273B5 /* WindowController.swift */; };
+		A178FC5E2393AB2A00A273B5 /* WordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A178FC5D2393AB2A00A273B5 /* WordsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A10D6BD42393BA4900F8D6A0 /* WordsWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsWindowController.swift; sourceTree = "<group>"; };
 		A1751E542392CCAF003AEBDF /* Trie Adding Words Into This.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trie Adding Words Into This.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1751E572392CCAF003AEBDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1751E592392CCAF003AEBDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +32,8 @@
 		A1751E692392CCE8003AEBDF /* trie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trie.h; sourceTree = "<group>"; };
 		A1751E6B2392CDC0003AEBDF /* TrieObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrieObject.m; sourceTree = "<group>"; };
 		A1751E6D2392CDD6003AEBDF /* TrieObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrieObject.h; sourceTree = "<group>"; };
+		A178FC5A2393931000A273B5 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		A178FC5D2393AB2A00A273B5 /* WordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WordsViewController.swift; path = "Trie Adding Words Into This/View Controllers/WordsViewController.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +69,21 @@
 				A1751E672392CCE1003AEBDF /* Trie Adding Words Into This-Bridging-Header.h */,
 				A1A209C92392F08D00C0DB92 /* Resources */,
 				A1A209C82392F07F00C0DB92 /* Others */,
+				A178FC5C2393931400A273B5 /* Window Controllers */,
 				A1A209C72392F07200C0DB92 /* View Controllers */,
 				A1A209C62392EF8200C0DB92 /* Objects */,
 				A1A209C52392EF6500C0DB92 /* Trie */,
 			);
 			path = "Trie Adding Words Into This";
+			sourceTree = "<group>";
+		};
+		A178FC5C2393931400A273B5 /* Window Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A10D6BD42393BA4900F8D6A0 /* WordsWindowController.swift */,
+				A178FC5A2393931000A273B5 /* WindowController.swift */,
+			);
+			path = "Window Controllers";
 			sourceTree = "<group>";
 		};
 		A1A209C52392EF6500C0DB92 /* Trie */ = {
@@ -91,6 +107,7 @@
 		A1A209C72392F07200C0DB92 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A178FC5D2393AB2A00A273B5 /* WordsViewController.swift */,
 				A1751E592392CCAF003AEBDF /* ViewController.swift */,
 			);
 			path = "View Controllers";
@@ -186,10 +203,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A178FC5E2393AB2A00A273B5 /* WordsViewController.swift in Sources */,
 				A1751E5A2392CCAF003AEBDF /* ViewController.swift in Sources */,
+				A178FC5B2393931000A273B5 /* WindowController.swift in Sources */,
 				A1751E6C2392CDC0003AEBDF /* TrieObject.m in Sources */,
 				A1751E6A2392CCE8003AEBDF /* trie.c in Sources */,
 				A1751E582392CCAF003AEBDF /* AppDelegate.swift in Sources */,
+				A10D6BD52393BA4900F8D6A0 /* WordsWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +277,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -311,7 +331,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;

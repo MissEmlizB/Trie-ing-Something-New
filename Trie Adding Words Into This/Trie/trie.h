@@ -25,6 +25,7 @@ typedef struct IfYouNeverTrieYouFailEveryTime
 trie_t;
 
 int charToKey(char aCharacter);
+char keyToChar(int key);
 
 trie_t *makeTrieNode(void);
 void releaseTrieNode(trie_t *trie);
